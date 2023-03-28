@@ -10,6 +10,8 @@ packages = [{include = "goit_python_web_hw10"}]
 python = "^3.10"
 django = "^4.1.7"
 psycopg2-binary = "^2.9.5"
+sqlalchemy = "^2.0.7"
+scrapy = "^2.8.0"
 
 
 [build-system]
