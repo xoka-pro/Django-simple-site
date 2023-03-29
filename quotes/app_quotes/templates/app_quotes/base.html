@@ -20,10 +20,16 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quotes</a>
+                        <a class="nav-link" href="{% url 'app_quotes:main' %}">Quotes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Authors</a>
+                        <a class="nav-link" href="{% url 'app_quotes:authors' %}">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'app_quotes:add_author' %}">Add author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'app_quotes:add_quote' %}">Add quote</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">LogOut</a>
