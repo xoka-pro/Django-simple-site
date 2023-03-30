@@ -35,7 +35,7 @@
                         <a class="nav-link" href="{% url 'app_quotes:add_quote' %}">Add quote</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LogOut</a>
+                        <a class="nav-link" href="{% url 'users:logout' %}">LogOut</a>
                     </li>
 
 
@@ -43,10 +43,10 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SignIn</a>
+                        <a class="nav-link" href="{% url 'users:login' %}">SignIn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SignUp</a>
+                        <a class="nav-link" href="{% url 'users:register' %}">SignUp</a>
                     </li>
 
                     {% endif %}
